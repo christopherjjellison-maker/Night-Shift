@@ -1,0 +1,5 @@
+# Minimal Supabase CLI config. `supabase link` fills in the project ref.
+[functions.ai]
+verify_jwt = false   # the function checks the user's JWT itself (so it can return a clean 401)
+[functions.scheduler]
+verify_jwt = false   # called by pg_cron with x-cron-key
